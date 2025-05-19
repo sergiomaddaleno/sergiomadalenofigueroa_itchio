@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your Name - Portfolio</title>
+  <style>
+    /* Reset and base styles */
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background: #121212;
+      color: #eee;
+      line-height: 1.6;
+    }
+    a {
+      color: #ff6f61;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    header {
+      background: #1f1f1f;
+      padding: 2rem 1rem;
+      text-align: center;
+      border-bottom: 2px solid #ff6f61;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      margin: 0.5rem 0 0;
+      font-size: 1.2rem;
+      color: #bbb;
+    }
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    section {
+      margin-bottom: 3rem;
+    }
+    h2 {
+      border-bottom: 2px solid #ff6f61;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+    }
+    .project-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+    .project {
+      background: #222;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(255, 111, 97, 0.3);
+      transition: transform 0.3s ease;
+    }
+    .project:hover {
+      transform: translateY(-5px);
+    }
+    .project img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      display: block;
+    }
+    .project-content {
+      padding: 1rem;
+    }
+    .project-content h3 {
+      margin: 0 0 0.5rem;
+    }
+    .project-content p {
+      margin: 0 0 1rem;
+      font-size: 0.9rem;
+      color: #ccc;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #555;
+      border-top: 1px solid #333;
+    }
+    /* Responsive */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      .project img {
+        height: 140px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Your Name</h1>
+    <p>Indie Game Developer & Designer</p>
+    <p>
+      <a href="https://itch.io/profile/yourprofile" target="_blank" rel="noopener noreferrer">itch.io</a> |
+      <a href="https://github.com/yourgithub" target="_blank" rel="noopener noreferrer">GitHub</a> |
+      <a href="https://twitter.com/yourtwitter" target="_blank" rel="noopener noreferrer">Twitter</a>
+    </p>
+  </header>
+
+  <main>
+    <section>
+      <h2>About Me</h2>
+      <p>
+        Passionate indie developer creating unique and immersive games. Experienced with Unity, C#, and pixel art.
+        Always learning and sharing knowledge with the community.
+      </p>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <div class="project-list">
+        <div class="project">
+          <img src="https://via.placeholder.com/400x160.png?text=Game+1" alt="Game 1 Screenshot" />
+          <div class="project-content">
+            <h3>Game Title 1</h3>
+            <p>A thrilling platformer with challenging levels and unique mechanics.</p>
+            <a href="https://yourgame1.itch.io" target="_blank" rel="noopener noreferrer">View on itch.io</a>
+          </div>
+        </div>
+
+        <div class="project">
+          <img src="https://via.placeholder.com/400x160.png?text=Game+2" alt="Game 2 Screenshot" />
+          <div class="project-content">
+            <h3>Game Title 2</h3>
+            <p>A cozy narrative-driven adventure with hand-drawn art.</p>
+            <a href="https://yourgame2.itch.io" target="_blank" rel="noopener noreferrer">View on itch.io</a>
+          </div>
+        </div>
+
+        <!-- Add more projects as needed -->
+      </div>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>You can reach me at <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Your Name. All rights reserved.
+  </footer>
+</body>
+</html>
